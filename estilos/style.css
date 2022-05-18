@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+*{ 
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(243, 217, 220);
+}
+
+header{
+    background-color: rgb(248, 187, 197); 
+    position: sticky;
+    padding: 30px;
+    top: 0;
+}
+
+ul li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+
+h1{
+    display: flex;
+    justify-content: center;
+    color: rgb(240, 26, 158);
+}
+h1:hover{
+    transform: scale(2);
+}
+nav ul li{
+    display: inline;
+    list-style: none;
+    color: black;
+    font-size: 0.50cm;
+    font-family: 'Quicksand', sans-serif;
+}
+li:hover a{
+    background-color: rgb(248, 123, 150);
+    color: white;
+}
+nav{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: end;
+}
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+}
+    
+.logo{
+    position: absolute;
+    top: 15px;   
+}
+
+.imagen1{
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.imagen2{
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+img{
+    border-radius: 10px;
+    border: 0 rgb(248, 187, 197);
+}
+footer{
+    background-color: rgb(248, 187, 197);
+    height: 150px;
+    padding: 80px;
+    margin-bottom: 0;
+    margin-top: 450px;
+    align-items: center;
+}
+footer h3{
+    color: blue;
+}
+.principal{
+    color: rgb(245, 10, 139);
+    text-align: center;
+    margin-top: 50px;
+}
+.subtitulo{
+    color: rgb(11, 240, 11);
+}
+
+p{
+    color: rgb(236, 48, 80);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.parrafoSegundo{
+    color: rgb(56, 56, 110);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.nosotros{
+    background: url(../img/quienesomos.jpg);
+    background-size: cover;
+}
+.nosotrosdescripcion p{
+    color: black;
+    text-align: left;
+    margin-right: 600px;
+    justify-content: center;
+}
+.nosotrosdescripcion h4{
+    margin: 10px;
+    margin-top: 40px;
+    margin-left: 5px;
+}
+.nosotrosdescripcion h5{
+    margin: 10px;
+    margin-left: 5px;
+}
+.productoContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    margin: 30px;
+}
+.tituloproductos{
+    text-align: center;
+}
+
+.card img{
+    width: 10px;
+}
+.colorparrafo{
+    color: black;
+    text-align: center;
+}
+.productoContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.grilla{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "productoContainer productoContainer"
+    
+}
+
+.productoContainer{
+    grid-area: productoContainer;
+    
+}
+
+.galeria{
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    margin: 15px;
+}
+.galeria:hover{
+    transform: scale(2);
+}
+.productoContainer{
+display: grid;
+grid-template-columns: auto auto;
+grid-template-rows: auto auto;
+height: 1000px;
+justify-content: space-evenly;
+align-items: end;
+gap: 100px;
+}
+.art{
+    display: flex;
+    
+    margin-top: 40px;
+}
+
+
+<<<<<<< HEAD
+/*responsive
+=======
+ 
+>>>>>>> style
+body{
+    background-color: rgb(247, 217, 220);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header{
+    font-size: large;
+    display: grid;
+    justify-content: center;
+}
+
+.tituloPrincipal{
+    grid-area: titulo;
+}
+/*.logo{
+    grid-area: logo;
+}*/
+.main-head{
+    grid-area: navbar;
+}
+.grillaIndex{
+    grid-area: principal;
+}
+.main{
+    grid-area: menu;
+}
+.footer{
+    grid-area: pie de pagina;
+}
+
+.principal{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 1500px;
+    gap: 15px;
+    align-items: end;
+    justify-content: center;
+}
+
+.wrpeer{
+    display: grid;
+    gap: 20px;
+    grid-template-areas:    
+    "titulo"
+    "logo"
+    "main-head"
+    "grillaIndex"
+    "main"
+    "footer";
+}
+@media(580)
