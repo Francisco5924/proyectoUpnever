@@ -11,34 +11,41 @@
 <body>
     <div class="wrpeer">
             <header class="header headercito">
-                <h1 class="tituloPrincipal">UP NEVER</h1>
-                <img class="logo" src="./img/Logo2.jpg" alt="logo">
-                <nav class="main-head">       
-                    <ul class="navbar">
-                        <li>
-                            <a href="index.html">Inicio</a>
-                        </li>
-                        <li>
-                            <a href="./secciones/productos.html">Productos</a>
-                        </li>
-                        <li>
-                            <a href="./secciones/perfil.html">Perfil</a>
-                        </li>
-                        <li>
-                            <a href="./secciones/nosotros.html">Nosotros</a>
-                        </li>
-                        <li>
-                            <a href="./secciones/contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </nav>
+                <nav class="navbar navbar-expand-lg rgb(248, 187, 197)">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="index.html"></a>
+                      <img src="./img/Logo.jpg" alt="logo">
+                      <button class="navbar-toggler" type="button color-black" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="index.html">Inicio</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-white" href="./secciones/productos.html">Productos</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-white" href="./secciones/perfil.html">Perfil</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-white" href="./secciones/nosotros.html">Nosotros</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-white" href="./secciones/contacto.html">Contacto</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
             </header>
         
         <div class="grillaIndex grilla-index">
             
             <main class="main">
                 <section class="principal">
-                    <h2>WINTER 2022</h2>
+                    <h1>WINTER 2022</h1>
                     <p>Lo nuevo te va a encantar!!!</p>
                     <figure class="principalimag">
                         <img src="./img/imagenprincipal.jpg" alt="temporada">
@@ -69,15 +76,47 @@
 
         </div>
     </div>
-            <footer class="footer fotercito">
-                <h3>Nuestro Local</h3>
-                    <h4>Rucci 1251, Claypole</h4>
-                    <h4>Lunes a Sabados de 9:30 a 13 hs. y de 16:30 a 20 hs </h4>
-                <h3>CONTACTANOS</h3>
-                    <h4>Instagram</h4>
-                    <h4>Whatsapp</h4>
-                    <h4>Facebook</h4>
-            </footer>
+    <footer class="py-5 background-color: rgb(248, 123, 150)">
+        <div class="row justify-content-center">
+          <div class="col-6 col-md-2 mb-3">
+            <h5 class="5hfooter">Nuestro Local</h5>
+            <h6>Rucci 1251, Claypole</h6>
+            <h6>Lunes a Sabados de 9:30 a 13 hs. y de 16:30 a 20 hs</h6>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Contáctanos</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="linkContactanos">(+54) 9 1161570457</a>
+              </li>
+              <li class="nav-item mb-2 ">
+                <a href="#" class="linkContactanos">Upnever.upnever@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+    
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Suscríbete a nuestra pagina</h5>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">E-mails</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="E-mails">
+                <button class="btn btn-primary" type="button">Suscríbete</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    
+        <div class="d-flex flex-column flex-sm-row justify-content-center py-4 my-4 border-top">
+          <p>&copy; 2022 Up Never. Todos los derechos reservados.</p>
+          <ul class="logoRedes">
+            <img class="redes" src="./img/instagram.jpg" alt="Fanpage en Instagram" width=25px>
+            <img class="redes" src="./img/facebook.jpg" alt="Fanpage en Facebook" width=25px>
+            <img class="redes" src="./img/whatsapp.jpg" alt="Fanpage en Whatsapp" width=25px>
+          </ul>
+        </div>
+      </footer>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

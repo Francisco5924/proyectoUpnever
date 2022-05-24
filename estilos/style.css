@@ -7,12 +7,11 @@
 body{
     background-color: rgb(243, 217, 220);
 }
-
+/*inicio navbar*/
 header{
     background-color: rgb(248, 187, 197); 
-    height: 2cm;
+    height: 3cm;
     position: sticky;
-    padding: 30px;
     top: 0;
 }
 
@@ -21,15 +20,6 @@ ul li{
     padding: 10px;
 }
 
-
-h1{
-    display: flex;
-    justify-content: center;
-    color: rgb(240, 26, 158);
-}
-h1:hover{
-    transform: scale(2);
-}
 nav ul li{
     display: inline;
     list-style: none;
@@ -37,6 +27,7 @@ nav ul li{
     font-size: 0.50cm;
     font-family: 'Quicksand', sans-serif;
 }
+
 li:hover a{
     background-color: rgb(248, 123, 150);
     color: white;
@@ -51,11 +42,17 @@ nav{
     display: flex;
     justify-content: flex-end;
 }
-    
-.logo{
-    position: absolute;
-    top: 15px;   
+  /*fin navbar*/  
+/*inicio titulo h1*/
+h1{
+    display: flex;
+    justify-content: center;
+    color: rgb(240, 26, 158);
 }
+h1:hover{
+    transform: scale(2);
+}
+/*fin titulo 1*/
 
 .imagen1{
     margin-bottom: 20px;
@@ -66,22 +63,36 @@ nav{
     margin-bottom: 20px;
     margin-left: 20px;
 }
-
+/*eliminar
 img{
     border-radius: 10px;
     border: 0 rgb(248, 187, 197);
-}
+}*/
+
+
+/*inicio del footer*/
 footer{
     background-color: rgb(248, 187, 197);
-    height: 150px;
-    padding: 80px;
+    height: 210px;
+    padding: 0px;
     margin-bottom: 0;
     margin-top: 450px;
     align-items: center;
 }
-footer h3{
-    color: blue;
+h5{
+    display: grid;
+    text-align: center;
 }
+h6{
+    display: grid;
+    text-align: center;
+}
+.nav-item{
+    display: grid;
+    text-align: center;
+}
+/*fin booter*/
+
 .principal{
     color: rgb(245, 10, 139);
     text-align: center;
@@ -92,7 +103,7 @@ footer h3{
 }
 
 p{
-    color: rgb(236, 48, 80);
+    color: black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .parrafoSegundo{
@@ -102,6 +113,10 @@ p{
 .nosotros{
     background: url(../img/quienesomos.jpg);
     background-size: cover;
+}
+.nosotros2{
+    display: grid;
+    text-align: left;
 }
 .nosotrosdescripcion p{
     color: black;
@@ -114,11 +129,9 @@ p{
     margin-top: 40px;
     margin-left: 5px;
 }
-.nosotrosdescripcion h5{
-    margin: 10px;
-    margin-left: 5px;
-}
-.productoContainer{
+
+
+/*.productoContainer{
     display: grid;
     margin: 30px;
     grid-template-columns: 1fr;
@@ -177,7 +190,7 @@ gap: 100px;
     
     margin-top: 40px;
 }
-.headercito{
+/*.headercito{
     grid-area: header;
 }
 .contenido{
