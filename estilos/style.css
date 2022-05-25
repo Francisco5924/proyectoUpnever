@@ -110,6 +110,7 @@ p{
     color: rgb(56, 56, 110);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+/*inicio nosotros*/
 .nosotros{
     background: url(../img/quienesomos.jpg);
     background-size: cover;
@@ -129,9 +130,10 @@ p{
     margin-top: 40px;
     margin-left: 5px;
 }
+/*fin nosotros*/
 
-
-/*.productoContainer{
+/* inicio productos*/
+.productoContainer{
     display: grid;
     margin: 30px;
     grid-template-columns: 1fr;
@@ -190,6 +192,15 @@ gap: 100px;
     
     margin-top: 40px;
 }
+/* fin pruductos*/
+.form{
+    display: flex;
+    margin: 10rem;
+    border-radius: 5px;
+
+    
+}
+
 /*.headercito{
     grid-area: header;
 }
@@ -236,4 +247,4 @@ gap: 100px;
         display: grid;
         grid-template-columns: 1fr;
     }
-}
+
