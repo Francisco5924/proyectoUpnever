@@ -2,6 +2,8 @@
 *{ 
     padding: 0;
     margin: 0;
+
+
 }
                                 /*inicio navbar*/
 header{
@@ -50,16 +52,17 @@ h1:hover{
     height: 400px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size: cover;
+     background-size: cover;
 }
-/*@media (max-width: 400px){
+/*@media (min-width: 486px) and (max-width: 786){
         .carousel-item{
-            height: 480px;
-            body{
-                background-color: black;
+            height: 480px;}
+        body{
+            background-color: black;
             }
-            }
+        
 }*/
+
 .slide{
     margin-top: 50px;
     margin-left: 300px;
@@ -68,7 +71,7 @@ h1:hover{
 }
 /*.slide img{
     height: 500px;
-}
+}*/
 
 
                                                 /*video*/
@@ -139,7 +142,7 @@ h6{
     margin-right: 300px;
 }
 .contacto2{
-    margin-left: 650px;
+    margin: auto;
     
 }
 .conhover:hover{
@@ -147,11 +150,13 @@ h6{
     color: pink;
 }
 
+
                                             /*gallery*/
 img{
     max-width: 100%;
     margin-bottom: 0.5em;
 }
+
 .gallery{
     margin: 20px;
     margin-bottom: 10px;
