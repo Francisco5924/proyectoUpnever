@@ -3,7 +3,6 @@
     padding: 0;
     margin: 0;
 
-
 }
                                 /*inicio navbar*/
 header{
@@ -47,47 +46,39 @@ h1:hover{
 }
 
                                                 /*inicio carrucel*/
-.carousel-item{
-    width: 100%;
-    height: 400px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-     background-size: cover;
-}
-/*@media (min-width: 486px) and (max-width: 786){
-        .carousel-item{
-            height: 480px;}
-        body{
-            background-color: black;
-            }
+
+
+/*.carousel{
+    width: 600;
+    height: 300;
+    /*-webkit-background-size: cover;*/
+    /*-moz-background-size: cover;*/
+     /*background-size: cover;
+}*/
+/*@media (min-width: 400px) and (max-width: 540px){
+    footer{
+    height: 4cm;
+    }
         
 }*/
 
-.slide{
+/*.slide{
     margin-top: 50px;
     margin-left: 300px;
     margin-right: 300px;
     padding: none
 }
-/*.slide img{
-    height: 500px;
+.slide img{
+    height: auto    ;
 }*/
 
-
-                                                /*video*/
-
-.video{
-    margin: 20px;
-    display: grid;
-    place-items: center;
-}
                                                 /*inicio footers*/
 footer{
     background-color: rgb(248, 187, 197);
-    height: 210px;
+    height: 5,2cm;
     padding: 0px;
     margin-bottom: 0;
-    margin-top: 450px;
+    margin-top: 0;
     align-items: center;
 }
 h5{
@@ -105,14 +96,17 @@ h6{
 .linkContactanos{
     text-decoration: none;
 }
-                                                /*fin booter*/
-                                                /*inicio formulari*/
-.form{
-    display: flex;
-    margin: 10rem;
+.redes:hover{
     border-radius: 5px;
+    transform: scale(2);
 }
-/*fin formulario*/   
+.sociales{
+    display: flex;
+    justify-content: center;
+}
+
+                                                /*fin booter*/
+  
                                                 /*inicio nosotros*/
 .nosotros{
     background: url(../img/quienesomos.jpg);
@@ -121,33 +115,35 @@ h6{
 .nosotros2{
     display: grid;
     text-align: left;
+    margin-left: 20px;
 }
-.nosotrosdescripcion p{
+.parrafo p{
     color: black;
     text-align: left;
-    margin-right: 600px;
-    justify-content: center;
+    margin-left: 20px;
+    height: 12rem;
+    text-align:justify
 }
 .nosotrosdescripcion h4{
-    margin: 10px;
+    margin: 20px;
     margin-top: 40px;
-    margin-left: 5px;
+    margin-left: 20px;
 }
                                     /*fin nosotros*/
                                         /*contacto*/
 .contacto{
     text-align: center;
     margin-top: 20px;
-    margin-left: 300px;
-    margin-right: 300px;
 }
 .contacto2{
     margin: auto;
     
 }
 .conhover:hover{
+
     scale: 2s;
     color: pink;
+    
 }
 
 
@@ -163,9 +159,4 @@ img{
     columns: 5 320px;
     column-gap: 0.5em;
 
-}
-body{
-    display: grid;
-    min-height: 100vh;
-    grid-template-rows: auto 1fr auto;
 }
