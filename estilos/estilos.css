@@ -1,162 +1,157 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
-*{ 
-    padding: 0;
-    margin: 0;
-
-}
-                                /*inicio navbar*/
-header{
-    background-color: rgb(248, 187, 197); 
-    max-height: fit-content;
-    position: sticky;
-    
+* {
+  padding: 0;
+  margin: 0;
 }
 
 
-nav ul li{
-    display: inline;
-    list-style: none;
-    color: black;
-    font-size: 0.50cm;
-    font-family: 'Quicksand', sans-serif;
-    list-style-type: none;
-    padding: 10px;
+header {
+  background-color: #f8bbc5;
+  max-height: content;
+  max-height: content;
+  max-height: fit-content;
+  position: sticky;
+  position: sticky;
 }
 
-li:hover a{
-    background-color: rgb(248, 123, 150);
-    color: white;
-    border-radius: 10px;
-}
-.navbar-toggler{
-    
-    background-color: rgb(230, 161, 194);
-
-}
-                                                /*fin navbar*/  
-                                                /*titulo*/
-h1{
-    display: flex;
-    justify-content: center;
-    color: rgb(240, 26, 158);
-    margin: 20px;
-}
-h1:hover{
-    transform: scale(2);
+nav ul li {
+  display: inline;
+  list-style: none;
+  color: black;
+  font-size: 0.50cm;
+  font-family: 'Quicksand', sans-serif;
+  list-style-type: none;
+  padding: 10px;
 }
 
-                                                /*inicio carrucel*/
-
-
-/*.carousel{
-    width: 600;
-    height: 300;
-    /*-webkit-background-size: cover;*/
-    /*-moz-background-size: cover;*/
-     /*background-size: cover;
-}*/
-/*@media (min-width: 400px) and (max-width: 540px){
-    footer{
-    height: 4cm;
-    }
-        
-}*/
-
-/*.slide{
-    margin-top: 50px;
-    margin-left: 300px;
-    margin-right: 300px;
-    padding: none
-}
-.slide img{
-    height: auto    ;
-}*/
-
-                                                /*inicio footers*/
-footer{
-    background-color: rgb(248, 187, 197);
-    height: 5,2cm;
-    padding: 0px;
-    margin-bottom: 0;
-    margin-top: 0;
-    align-items: center;
-}
-h5{
-    display: grid;
-    text-align: center;
-}
-h6{
-    display: grid;
-    text-align: center;
-}
-.nav-item{
-    display: grid;
-    text-align: center;
-}
-.linkContactanos{
-    text-decoration: none;
-}
-.redes:hover{
-    border-radius: 5px;
-    transform: scale(2);
-}
-.sociales{
-    display: flex;
-    justify-content: center;
+li:hover a {
+  background-color: #f87b96;
+  color: white;
+  border-radius: 10px;
 }
 
-                                                /*fin booter*/
+.navbar-toggler {
+  background-color: #e6a1c2;
+}
+
+
+h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #f01a9e;
+  margin: 20px;
+}
+
+h1:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+
+footer {
+  background-color: #f8bbc5;
+  height: 5,2cm;
+  padding: 0px;
+  margin-bottom: 0;
+  margin-top: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h5 {
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+}
+
+h6 {
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+}
+
+.nav-item {
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+}
+
+.linkContactanos {
+  text-decoration: none;
+}
+
+.redes:hover {
+  border-radius: 5px;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.sociales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+
+.nosotros {
+  background: url(../img/quienesomos.jpg);
+  background-size: cover;
+}
+
+.nosotros2 {
   
-                                                /*inicio nosotros*/
-.nosotros{
-    background: url(../img/quienesomos.jpg);
-    background-size: cover;
+  display: grid;
+  text-align: left;
+  margin-left: 20px;
 }
-.nosotros2{
-    display: grid;
-    text-align: left;
-    margin-left: 20px;
-}
-.parrafo p{
-    color: black;
-    text-align: left;
-    margin-left: 20px;
-    height: 12rem;
-    text-align:justify
-}
-.nosotrosdescripcion h4{
-    margin: 20px;
-    margin-top: 40px;
-    margin-left: 20px;
-}
-                                    /*fin nosotros*/
-                                        /*contacto*/
-.contacto{
-    text-align: center;
-    margin-top: 20px;
-}
-.contacto2{
-    margin: auto;
-    
-}
-.conhover:hover{
 
-    scale: 2s;
-    color: pink;
-    
+.parrafo p {
+  color: black;
+  text-align: left;
+  margin-left: 20px;
+  height: 12rem;
+  text-align: justify;
+}
+
+.nosotrosdescripcion h4 {
+  margin: 20px;
+  margin-top: 40px;
+  margin-left: 20px;
 }
 
 
-                                            /*gallery*/
-img{
-    max-width: 100%;
-    margin-bottom: 0.5em;
+.contacto {
+  text-align: center;
+  margin-top: 20px;
 }
 
-.gallery{
-    margin: 20px;
-    margin-bottom: 10px;
-    columns: 5 320px;
-    column-gap: 0.5em;
+.contacto2 {
+  margin: auto;
+}
 
+.conhover:hover {
+  scale: 2s;
+  color: pink;
+}
+
+
+img {
+  max-width: 100%;
+  margin-bottom: 1em;
+}
+
+.gallery {
+  margin: 20px;
+  margin-bottom: 10px;
+  -webkit-columns: 5 320px;
+          columns: 5 320px;
+  -webkit-column-gap: 0.5em;
+          column-gap: 0.5em;
 }
