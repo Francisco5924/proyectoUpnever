@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*inicio navbar*/
+header {
+  background-color: #f8bbc5;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+nav ul li {
+  display: inline;
+  list-style: none;
+  color: black;
+  font-size: 0.50cm;
+  font-family: 'Quicksand', sans-serif;
+  list-style-type: none;
+  padding: 10px;
+}
+
+li:hover a {
+  background-color: #f87b96;
+  color: white;
+  border-radius: 10px;
+}
+
+.navbar-toggler {
+  background-color: #e6a1c2;
+}
+
+/*fin navbar*/
+/*titulo*/
+h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #f01a9e;
+  margin: 20px;
+}
+
+h1:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+/*inicio carrucel*/
+/*inicio footers*/
+footer {
+  background-color: #f8bbc5;
+  height: 5,2cm;
+  padding: 0px;
+  margin-bottom: 0;
+  margin-top: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h5 {
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+}
+
+h6 {
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+}
+
+.nav-item {
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+}
+
+.linkContactanos {
+  text-decoration: none;
+}
+
+.redes:hover {
+  border-radius: 5px;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.sociales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*fin booter*/
+/*inicio nosotros*/
+.nosotros {
+  background: url(../img/quienesomos.jpg);
+  background-size: cover;
+}
+
+.nosotros2 {
+  display: -ms-grid;
+  display: grid;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.parrafo p {
+  color: black;
+  text-align: left;
+  margin-left: 20px;
+  height: 12rem;
+  text-align: justify;
+}
+
+.nosotrosdescripcion h4 {
+  margin: 20px;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+/*fin nosotros*/
+/*contacto*/
+.contacto {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contacto2 {
+  margin: auto;
+}
+
+.conhover:hover {
+  scale: 2s;
+  color: pink;
+}
+
+/*gallery*/
+img {
+  max-width: 100%;
+  margin-bottom: 0.5em;
+}
+
+.gallery {
+  margin: 20px;
+  margin-bottom: 10px;
+  -webkit-columns: 5 320px;
+          columns: 5 320px;
+  -webkit-column-gap: 0.5em;
+          column-gap: 0.5em;
+}
+/*# sourceMappingURL=style.css.map */
