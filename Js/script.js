@@ -1,18 +1,44 @@
 
-let gallery = document.getElementById("gallery")
-console.log(gallery);
-
-function Productos (nombre,precio,stock){
+function Productos (nombre,precio,stock, img){
     this.nombre= nombre;
     this.precio= precio;
-    this.stock= stock;
+    this.stock= stock || 0;
+    this.img= img;
     this.restarStock = function (cantidad){
         this.stock -= cantidad
     }
+    this.sumarStock = function (cantidad){
+        this.stock += cantidad
+    }
 }
-let productoBuzo = new Productos("Buzo",4000,15)
-let productoRemera = new Productos("Remera",2500,15)
-let productoPantalon = new Productos("Pantalon",6000,5)
+let producto1 = new Productos("Campera Jeans Azul",4000,15, "../img/campera1.jpeg")
+let producto2 = new Productos("Sweater beige", 2500, 15, "../img/campera2.jpeg" )
+let producto3 = new Productos("Chaleco Engomado Marro", 8000 ,15, "../img/campera3.jpeg")
+let producto4 = new Productos("Campera Jeans Con Corderito",9000,15)
+let producto5 = new Productos("Campera Puffer Negra",6500,15)
+let producto6 = new Productos("Cardigan Verde",6000,15)
+let producto7 = new Productos("Chaleco Puffer Blanco",3000,15)
+let producto8 = new Productos("Buzo Alaska",2500,15)
+let producto9 = new Productos("Campera Jeans Overside",8500,15)
+let producto10 = new Productos("Chaleco Puffer Negro",9000,15)
+let producto11 = new Productos("Sweater Verde Overside",4000,15)
+let producto12 = new Productos("Buso Azul",3000,15)
+
+let listaProductos = [producto1, producto2, producto3, producto4, producto5, producto6, producto7, producto8, producto9, producto10, producto11, producto12]
+
+let listaProductoStock = listaProductos.filter((prod) => prod.stock > 0)
+
+let listaNombres = listaProductoStock.map((prod) => prod.nombre)
+
+let precioTotal = 0
+
+let gallery = document.getElementsByClassName("gallery")
+console.log(gallery);
+
+
+
+
+
 
 /*let productoBuzo = {
     nombre: "Buzo",
