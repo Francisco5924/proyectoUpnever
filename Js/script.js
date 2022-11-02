@@ -1,5 +1,5 @@
 
-function Productos (nombre,precio,stock, img){
+function Producto (nombre, precio,stock, img){
     this.nombre= nombre;
     this.precio= precio;
     this.stock= stock || 0;
@@ -11,18 +11,18 @@ function Productos (nombre,precio,stock, img){
         this.stock += cantidad
     }
 }
-let producto1 = new Productos("Campera Jeans Azul",4000,15, "../img/campera1.jpeg")
-let producto2 = new Productos("Sweater beige", 2500, 15, "../img/campera2.jpeg" )
-let producto3 = new Productos("Chaleco Engomado Marro", 8000 ,15, "../img/campera3.jpeg")
-let producto4 = new Productos("Campera Jeans Con Corderito",9000,15)
-let producto5 = new Productos("Campera Puffer Negra",6500,15)
-let producto6 = new Productos("Cardigan Verde",6000,15)
-let producto7 = new Productos("Chaleco Puffer Blanco",3000,15)
-let producto8 = new Productos("Buzo Alaska",2500,15)
-let producto9 = new Productos("Campera Jeans Overside",8500,15)
-let producto10 = new Productos("Chaleco Puffer Negro",9000,15)
-let producto11 = new Productos("Sweater Verde Overside",4000,15)
-let producto12 = new Productos("Buso Azul",3000,15)
+let producto1 = new Producto("Campera Jeans Azul",4000,15, "../img/campera1.jpeg")
+let producto2 = new Producto("Sweater beige", 2500, 15, "../img/campera2.jpeg" )
+let producto3 = new Producto("Chaleco Engomado Marro", 8000 ,15, "../img/campera3.jpeg")
+let producto4 = new Producto("Campera Jeans Con Corderito",9000,15)
+let producto5 = new Producto("Campera Puffer Negra",6500,15)
+let producto6 = new Producto("Cardigan Verde",6000,15)
+let producto7 = new Producto("Chaleco Puffer Blanco",3000,15)
+let producto8 = new Producto("Buzo Alaska",2500,15)
+let producto9 = new Producto("Campera Jeans Overside",8500,15)
+let producto10 = new Producto("Chaleco Puffer Negro",9000,15)
+let producto11 = new Producto("Sweater Verde Overside",4000,15)
+let producto12 = new Producto("Buso Azul",3000,15)
 
 let listaProductos = [producto1, producto2, producto3, producto4, producto5, producto6, producto7, producto8, producto9, producto10, producto11, producto12]
 
@@ -35,6 +35,17 @@ let precioTotal = 0
 let gallery = document.getElementsByClassName("gallery")
 console.log(gallery);
 
+for(const prod of listaProductos){
+
+let card = document.createElement ("div")
+
+card.className = "card"
+
+card.innerHTML = `<h5>${prod.nombre}</h5><p>${prod.precio}</p><img scr=${prod.img}></img>`
+console.log(card);
+gallery.append(card)
+
+}
 
 
 
