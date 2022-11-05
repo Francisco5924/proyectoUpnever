@@ -121,15 +121,15 @@ h6{
 }
 
 
-                                            /*gallery*/
-img{
-    max-width: 100%;
-    margin-bottom: 0.5em;
+                                            /*galeria*/
+
+
+
+.galeriaGeneral{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    grid-gap: 15px;
+   
 }
 
-.gallery{
-    margin: 20px;
-    margin-bottom: 10px;
-    columns: 5 320px;
-    column-gap: 0.5em;
-}

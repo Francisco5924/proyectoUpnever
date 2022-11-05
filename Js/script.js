@@ -1,29 +1,110 @@
+const galeria = document.getElementById("galeria");
+//array con objetos
+const producto = [{
+    id:1,
+    nombre: "Campera Jeans Azul",
+    precio: 4000,
+    stock: 15,
+    img : "../img/campera1.jpeg",
+},
+{
+    id:2,
+    nombre: "Sweater beige",
+    precio: 2000,
+    stock: 15,
+    img : "../img/campera2.jpeg",
+},
+{
+    id:3,
+    nombre: "Chaleco Engomado Marro",
+    precio: 8000,
+    stock: 15,
+    img : "../img/campera3.jpeg",
+},
+{
+    id:4,
+    nombre: "Campera Jeans Con Corderito",
+    precio: 9000,
+    stock: 15,
+    img : "../img/campera4.jpeg",
+},
+{
+    id:5,
+    nombre: "Campera Puffer Negra",
+    precio: 6500,
+    stock: 15,
+    img : "../img/campera5.jpeg",
+},
+{
+    id:6,
+    nombre: "Cardigan Verde",
+    precio: 6000,
+    stock: 15,
+    img : "../img/campera6.jpeg",
+},
+{
+    id:7,
+    nombre: "Chaleco Puffer Blanco",
+    precio: 6500,
+    stock: 15,
+    img : "../img/campera7.jpeg",
+},
+{
+    id:8,
+    nombre: "Buzo Alaska",
+    precio: 2500,
+    stock: 15,
+    img : "../img/campera8.jpeg",
+},
+]
 
-function Producto (nombre, precio,stock, img){
-    this.nombre= nombre;
-    this.precio= precio;
-    this.stock= stock || 0;
-    this.img= img;
-    this.restarStock = function (cantidad){
-        this.stock -= cantidad
-    }
-    this.sumarStock = function (cantidad){
-        this.stock += cantidad
-    }
-}
-let producto1 = new Producto("Campera Jeans Azul",4000,15, "../img/campera1.jpeg")
-let producto2 = new Producto("Sweater beige", 2500, 15, "../img/campera2.jpeg" )
-let producto3 = new Producto("Chaleco Engomado Marro", 8000 ,15, "../img/campera3.jpeg")
-let producto4 = new Producto("Campera Jeans Con Corderito",9000,15)
-let producto5 = new Producto("Campera Puffer Negra",6500,15)
-let producto6 = new Producto("Cardigan Verde",6000,15)
-let producto7 = new Producto("Chaleco Puffer Blanco",3000,15)
-let producto8 = new Producto("Buzo Alaska",2500,15)
-let producto9 = new Producto("Campera Jeans Overside",8500,15)
-let producto10 = new Producto("Chaleco Puffer Negro",9000,15)
-let producto11 = new Producto("Sweater Verde Overside",4000,15)
-let producto12 = new Producto("Buso Azul",3000,15)
 
+
+//carrito vacio
+let carrito =[]
+//recorrer el array
+producto.forEach((prod)=> {
+    let cards = document.createElement("div");
+    cards.className= "cards"
+    cards.innerHTML=`<img claas=imgcard src="${prod.img}"><h5>${prod.nombre}</h5><p>Presio$ ${prod.precio}</p><a class="btn btn-primary">Comprar</a>`;
+
+    galeria.append(cards);
+
+
+
+
+
+
+
+
+
+//<img src="${prod.img}">
+//<h5 id=cardNombre> ${prod.nombre}</h5>
+//<p id=cardPrecio>Precio $${prod.precio}</p>
+
+    //cracion de boton
+    //let comprar = document.createElement("button");
+    //comprar.innerText = "Comprar";
+    //containerCards.append(comprar);
+
+})
+
+
+/*
+
+
+
+
+
+
+let producto8 = new Producto("Buzo Alaska",2500,15, "../img/campera8.jpeg")
+let producto9 = new Producto("Campera Jeans Overside",8500,15, "../img/campera10.jpeg")
+let producto10 = new Producto("Chaleco Puffer Negro",9000,15, "../img/campera11.jpeg")
+let producto11 = new Producto("Sweater Verde Overside",4000,15, "../img/campera14.jpeg")
+let producto12 = new Producto("Buso Azul",3000,15, "../img/campera13.jpeg")
+
+
+//array
 let listaProductos = [producto1, producto2, producto3, producto4, producto5, producto6, producto7, producto8, producto9, producto10, producto11, producto12]
 
 let listaProductoStock = listaProductos.filter((prod) => prod.stock > 0)
@@ -32,8 +113,11 @@ let listaNombres = listaProductoStock.map((prod) => prod.nombre)
 
 let precioTotal = 0
 
-let gallery = document.getElementsByClassName("gallery")
-console.log(gallery);
+
+
+//generando cards
+let galeria = document.getElementById("galeria")
+console.log(galeria);
 
 for(const prod of listaProductos){
 
@@ -41,9 +125,10 @@ let card = document.createElement ("div")
 
 card.className = "card"
 
-card.innerHTML = `<h5>${prod.nombre}</h5><p>${prod.precio}</p><img scr=${prod.img}></img>`
-console.log(card);
-gallery.append(card)
+card.innerHTML =`<div class="card"><img src="${prod.img}"><div class="card-body"><h5 id=cardNombre>${prod.nombre}</h5><p id=cardPrecio>Precio ${prod.precio}</p>`
+
+galeria.append(card)
+
 
 }
 
